@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <title>Account SPY</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    >
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.css" integrity="sha256-kgOoigZTP1lSBr7QDdEQ4mcwFAi0pvmCcvfcnRYHicc=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.0/lity.min.js" integrity="sha256-rr6XKdaA3InL/R1iKt/B+un4oU/c23+5Rxubx7qO5ts=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/core.css">
+
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"> </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+   <section id="header">
+     <img id="logo_img" src="imgs/tao_accountist_logo.png"/> TAO accountist
+   </section>
+
+   <div id="data-wrapper" class="row">
+     <section id="sidebar" class="col-md-3" >
+
+       <div id="sidebar-wrapper" style="">
+         <h2> Accounts </h2>
+
+         <div id="wallet-view-wrapper">
+           <div id="wallet-list">
+             <table id="wallet-table">
+               <tbody id="wallet-table-data">
+
+
+               </tbody>
+             </table>
+           </div>
+         </div>
+
+         <div class="sidebar-button-wrap">
+           <button id="add-wallet-button" class="btn-lg btn-block btn-outline-success">
+             + Add Wallet
+           </button>
+         </div>
+       </div>
+     </section>
+
+     <section id="info-view" class="col-md-9">
+       <div id="info-view-wrapper" class="main-container">
+         <h1>Account Information </h1>
+         <div class="row">
+
+           <div class="col-md-6">
+             <div class="card main_card">
+               <h3>Address</h3>
+               <div id="address_val">
+               </div>
+             </div>
+           </div>
+
+           <div class="col-md-6">
+             <div class="card main_card">
+               <h3>Balance</h3>
+               <div id="balance_val">
+               </div>
+             </div>
+           </div>
+
+           <div class="col-md-6">
+             <div class="card main_card">
+               <h3> Transactions </h3>
+               <div id="transactions_val">
+               </div>
+             </div>
+           </div>
+
+           <div class="col-md-6">
+             <div class="card main_card">
+               <h3> Internal Transactions </h3>
+               <div id="itransactions_val">
+               </div>
+             </div>
+           </div>
+
+         </div>
+       </div>
+     </section>
+   </div>
+
+   <section id="add-wallet" class="lity-hide">
+     <div id="add-wallet-wrap">
+       <div class="add-wallet-form form-group">
+         <h1> Add Wallet </h1>
+         <input id="wallet-input" type="text" placeholder="Wallet Address" class="form-control"/>
+         <button id="submit-wallet-button" class="btn-lg btn-success"> Add </button>
+         <span id="addWallMsg"></span>
+       </div>
+     </div>
+   </section>
+
+   <section id="settings" class="lity-hide">
+   </section>
+
+  </body>
+
+  <script src="js/shaLib.js" ></script>
+  <script src = "js/browserUtils.js"></script>
+  <script src = "js/core.js"></script>
+
+</html>

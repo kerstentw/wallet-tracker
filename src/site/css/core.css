@@ -1,0 +1,190 @@
+:root {
+  --header-height: 85px;
+  --main-bg-color: #FFFFFF;
+  --info-main-bg: #FFFFFF;
+  --main-text-color: #333333;
+  --util-pad: 5%;
+  --brand-blue: #00baff;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+section {
+}
+
+#header {
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding-left: var(--util-pad);
+  padding-top: 15px;
+}
+
+#header-wrapper {
+  margin-left: var(--util-pad);
+}
+
+#logo_img {
+  height: 35px;
+}
+
+#data-wrapper {
+  height: calc(100% - var(--header-height));
+  width: 100%
+}
+
+#sidebar {
+  background-color:var(--main-bg-color);
+  color: var(--main-text-color);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex: 1;
+}
+
+#info-view {
+  background-color: var(--info-main-bg);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex: 1;
+  max-height: 100%;
+  overflow: scroll;
+}
+
+#sidebar-wrapper {
+  padding: var(--util-pad);
+}
+
+#info-view-wrapper {
+
+}
+
+#add-wallet-wrap {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+
+
+}
+
+#wallet-view-wrapper {
+  max-height: 75%;
+  height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: white;
+  padding:
+}
+
+.red_circle {
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background-color: #ff5151;
+  border: 1px solid red;
+  float: right;
+}
+
+.main_container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.main_card {
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.trans_card {
+  padding: 5px;
+  font-size: 13px;
+  text-align: left;
+  margin-bottom: 10px;
+
+}
+
+.selected {
+  border: 1px solid var(--brand-blue);
+}
+
+.address-wrap {
+  max-width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.wallet-wrap {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+
+
+
+}
+
+.wallet-wrap:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.wallet-wrap.selected {
+  border: 1px solid var(--brand-blue);
+}
+
+.address_head {
+  font-size: 15px;
+}
+
+.date-span {
+  font-size: 9px;
+}
+
+.coin_logo {
+  height: 25px;
+}
+
+.add-wallet-form {
+  padding: 100px;
+}
+
+.row {
+  margin: 0;
+}
+
+.btn-outline-light {
+  background-color: rgba(0,0,0,0)
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DDD;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #EEE;
+}
+
+.sidebar-button-wrap {
+  margin-top: 25px;
+}
